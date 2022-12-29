@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Admin</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar navbar-expand-lg" style="background-color: skyblue;">
+            <div class="container " style="font-size:x-large;">
+            <h3>Admin Dashboard</h3>
+                <ul class="navbar-nav">
+                    <b> <li class="nav-item"><a class="nav-link active" href="admin.html">User</a></li></b>
+                    <b><li class="nav-item"><a class="nav-link active" href="admin2.html">Service Provider</a></li></b>
+                    <b> <li class="nav-item"><a class="nav-link active" href="admin3.html">Services</a></li></b>
+                    <b><li class="nav-item"><a class="nav-link active" href="">Logout</a></li></b>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container ">
+         <a href="" class="btn btn-danger mt-3" data-toggle="modal" data-target="#addmodal">Add Service</a>
+    </div>
+    <div class="container py-5 text-center mt-3" >
+        <h1>Services Offered</h1>
+        <div class="row py-5"> 
+            <div class="col-md-3"> 
+                <div class="card h-100" style="width: 18rem; background-color: rgb(211, 189, 189);">
+                    <div class="card-body">
+                        <h5 class="card-title">Housemaid</h5>
+                        <p class="card-text" >Enjoy The Comforts Of Not Having To Do Domestic Chores, Hire A Trained, Trustworthy And Hygienic Maid.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a href="" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"> 
+                <div class="card h-100" style="width: 18rem; background-color: rgb(211, 189, 189);">
+                    <div class="card-body">
+                        <h5 class="card-title">Cook</h5>
+                        <p class="card-text" >Relish The Food Prepared By Our Experienced Hygienic Cook.</p> 
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a href="" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"> 
+                <div class="card h-100" style="width: 18rem; background-color: rgb(211, 189, 189);">
+                    <div class="card-body">
+                        <h5 class="card-title">Babysitter</h5>
+                        <p class="card-text" >Now Your Child Will Have His / Her Own Personal Babysitter To Pamper And Take Care Of Him / Her When You’re Busy.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a href="" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"> 
+                <div class="card h-100" style="width: 18rem; background-color: rgb(211, 189, 189);">
+                    <div class="card-body">
+                        <h5 class="card-title">Elderly Care</h5>
+                        <p class="card-text" >An Elderly Care Attendant To Take Special Care And Support Your Elders As Good As You Would Do.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a href="" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+    <!-- add service modal -->
+  <div class="modal fade" id="addmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add service</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group mt-2">
+                <label>Service Name</label>
+                <input type="text" name="sname" class="form-control text" placeholder="Enter service name">
+            </div>
+            <div class="form-group mt-2">
+                <label>Service Description</label>
+                <input type="text" name="sdesc" class="form-control text" placeholder="Enter service description">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+</body>
+</html>

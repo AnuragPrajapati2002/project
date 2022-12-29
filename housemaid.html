@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <title>Housemaid Details</title>
+</head>
+<body>
+
+ <!-- Modal -->
+  <div class="modal fade" id="modalid" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalidLabel">Booking Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group mt-2">
+                <label>Name</label>
+                <input type="text" name="name" class="form-control text" placeholder="Enter full name">
+            </div>
+            <div class="form-group mt-2">
+                <label>Contact Number</label>
+                <input type="number" class="form-control text" placeholder="Enter Mobile Number">
+            </div>
+            <div class="form-group mt-2">
+                <label>Address</label>
+                <textarea class="form-control" rows="6" placeholder="Enter Address"></textarea>
+            </div>
+            <div class="form-group mt-2">
+                <label>Pin Code</label>
+                    <input type="text" class="form-control text" placeholder="Enter Pincode">
+            </div>
+            <div class="form-group mt-2">
+                <label>Date</label>
+                <input type="text" class="form-control text" placeholder="dd-mm-yy">
+            </div>
+            <div class="form-group mt-2">
+                <label>Days</label>
+                <input type="text" name="name" class="form-control text" placeholder="Enter number of days">
+            </div>
+            <div class="form-group mt-2">
+                <label>Hours</label><br>
+                <select>
+                    <option value="0"> --Select Hours--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success">Book</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  -->
+
+
+<!-- Cards code -->
+    <div class="container py-5 text-center">
+        <h1>HOUSEMAIDS DETAILS</h1>
+        <p >Enjoy The Comforts Of Not Having To Do Domestic Chores, Hire A Trained, Trustworthy And Hygienic Maid.</p>
+        <div class="row py-5"> 
+            <div class="col-md-3"> 
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="client5.png" class="card-img" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lauran William</h5>
+                        <p class="card-text" >3 years of experience <br>2 hours of working<br>Salary 4500  </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalid">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"> 
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="client5.png" class="card-img" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lauran William</h5>
+                        <p class="card-text" >2 years of experience <br>3 hours of working<br>Salary 6000  </p> 
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalid">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 h-100"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="client4.jpg" class="card-img" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lauran William</h5>
+                        <p class="card-text" >3.5 years of experience <br>1 hours of working<br>Salary 9000  </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalid">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 h-100"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="client3.jpg" class="card-img" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lauran William</h5>
+                        <p class="card-text" >1 years of experience <br>2 hours of working<br>Salary 5000  </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalid">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5 h-100" > 
+                <div class="card" style="width: 18rem;">
+                    <img src="client3.jpg" class="card-img" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lauran William</h5>
+                        <p class="card-text" >3 years of experience <br>2 hours of working<br>Salary 8000 </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalid">Book Now</button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>  
+</body>
+</html>
